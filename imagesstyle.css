@@ -1,0 +1,270 @@
+body{
+   background-image: url("https://images.hdqwalls.com/download/moon-rays-red-space-sky-abstract-mountains-4c-1920x1080.jpg");
+   width: 100%;
+   height: 100%;
+}
+
+.header{
+   text-align: center;
+   margin: auto;
+   margin-bottom: 5px;
+   width: 60%;
+   border: 2px solid black;
+   border-radius: 20px;
+   justify-content: center;
+   color: white;
+   background-color: rgba(0,0,0,0.9);
+}
+
+/** Main grid **/
+
+.mainbox{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 20px;
+  box-sizing: border-box;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  border: 2px solid black;
+  border-radius: 20px;
+  justify-items: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.9);
+}
+
+
+/** Large screens **/
+
+@media screen 
+  and (min-width: 829px) 
+  and (max-width: 1600px)
+    {
+    .mainbox{
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      grip-gap: 15px;
+      
+    }
+}
+
+/** medium screen **/
+
+@media screen 
+  and (min-width: 640px) 
+  and (max-width: 829px)
+    {
+    .mainbox{
+      grid-template-columns: 1fr ;
+      grid-template-rows: auto;
+      grip-gap: 15px;
+      
+    }
+}
+
+/** Small screen **/
+
+@media screen 
+  and (min-width: 100px) 
+  and (max-width: 319px)
+    {
+    .mainbox{
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grip-gap: 5px;
+      background-color: unset;
+      border: unset;
+      
+    }
+}
+
+/** Images **/
+
+.boxone{
+  border: 2px solid black;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.img1:hover{
+   transform: scale(1.2);
+   
+}
+
+.img1{
+   height: 200px;
+   width: 200px;
+   transition: all .2s ease-in-out; 
+}
+
+.boxtwo{
+  border: 2px solid black;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  position: relative;
+}
+
+.img2:hover{
+   transform: scale(1.2);
+   
+}
+
+.img2{
+    height: 200px;
+    width: 200px;
+    transition: all .2s ease-in-out; 
+}
+
+.boxthree{
+   border: 2px solid black;
+   border-radius: 20px;
+   text-align: center;
+   font-weight: bold;
+   color: white;
+}
+
+.img3:hover{
+   transform: scale(1.2);
+   
+}
+
+.img3{
+   height: 200px;
+   width: 200px;
+   transition: all .2s ease-in-out; 
+}
+
+.boxfour{
+  border: 2px solid black;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+   
+}
+
+.img4:hover{
+   transform: scale(1.2);
+   
+}
+
+.img4{
+  height: 200px;
+  width: 200px;
+  transition: all .2s ease-in-out; 
+}
+
+.boxfive{
+  border: 2px solid black;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+   
+}
+
+.img5:hover{
+   transform: scale(1.2);
+   
+}
+
+
+.img5{
+   height: 200px;
+   width: 200px;
+   transition: all .2s ease-in-out; 
+}
+
+.boxsix{
+   border: 2px solid black;
+   border-radius: 20px;
+   text-align: center;
+   font-weight: bold;
+   color: white;
+  
+}
+
+.img6:hover{
+   transform: scale(1.2);
+   
+}
+
+.img6{
+   height: 200px;
+   width: 200px;
+   transition: all .2s ease-in-out; 
+}
+
+
+.boxseven{
+  border: 2px solid black;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+   
+}
+
+.img7:hover{
+   transform: scale(1.2);
+   
+}
+
+.img7{
+   height: 200px;
+   width: 200px;
+   transition: all .2s ease-in-out;  
+}
+
+.boxeight{
+   border: 2px solid black;
+   border-radius: 20px;
+   text-align: center;
+   font-weight: bold;
+   color: white;
+}
+
+.img8:hover{
+   transform: scale(1.2);
+   
+}
+
+.img8{
+   height: 200px;
+   width: 200px;
+   transition: all .2s ease-in-out; 
+}
+
+/** Footer grid **/
+
+.footer{
+   display: grid;
+   grid-template-column: auto;
+   grid-template-row: auto;
+   width: 60%;
+   height: 60px;
+   margin: auto;
+   margin-top: 5px;
+   border: 2px solid black;
+   border-radius: 20px;
+   background-color: rgba(0,0,0,0.9);
+}
+
+.fa-house:hover{
+   transform: scale(1.2);
+
+}
+
+.fa-house{
+   text-decoration: none;
+   margin-top: 20px;
+   color: white;
+   text-align: center;
+   font-size: 20px;
+   transition: all .2s ease-in-out; 
+}
+

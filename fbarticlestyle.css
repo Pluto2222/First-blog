@@ -1,0 +1,177 @@
+body{
+   background-color: rgba(255,192,203,0.3);
+   height: 100%;
+   width: 100%;
+   margin: 0;
+   font-family: 'Space Mono', monospace;
+   
+}
+
+/** Header **/
+
+.header{
+   text-align: center;
+   margin: auto;
+   margin-bottom: 5px;
+   width: 80%;
+   border: 2px solid black;
+   justify-content: center;
+   background-image:url("https://images.unsplash.com/photo-1596998628927-4a8199d0d11b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGluayUyMHNreSUyMGF0JTIwbmlnaHR8ZW58MHx8MHx8&w=1000&q=80");
+   background-size: cover;
+   color: white;
+}
+
+/** grid container **/
+
+
+.mainbox{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 20px;
+  box-sizing: border-box;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  border: 2px solid black;
+  background-image:url("https://images.unsplash.com/photo-1596998628927-4a8199d0d11b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGluayUyMHNreSUyMGF0JTIwbmlnaHR8ZW58MHx8MHx8&w=1000&q=80");
+  
+}
+
+/** Large screens **/
+
+@media screen 
+  and (min-width: 1015px) 
+  and (max-width: 1600px)
+    {
+    .mainbox{
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 2fr 2fr;
+      grip-gap: 15px;
+    }
+}
+
+
+
+.boxone{
+   border: 2px solid black;
+   background-image: url("http://astronomy.com/~/media/B05AE2C632A74E3A992C1EE9BF4C05D3.jpg");
+   background-size:cover;
+   color: white;
+   font-weight: bold;
+   text-align: center;
+}
+
+.boxtwo{
+   border: 2px solid black;
+   background-image: url("http://astronomy.com/~/media/B05AE2C632A74E3A992C1EE9BF4C05D3.jpg");
+   color: white;
+   font-weight: bold;
+   text-align: center;
+   
+   
+}
+
+.boxthree{
+   border: 2px solid black;
+   background-image: url("http://astronomy.com/~/media/B05AE2C632A74E3A992C1EE9BF4C05D3.jpg");
+   background-size: cover;
+   color: white;
+   font-weight: bold;
+   text-align: center;
+   
+}
+
+.boxfour{
+   border: 2px solid black;
+   background-image: url("http://astronomy.com/~/media/B05AE2C632A74E3A992C1EE9BF4C05D3.jpg");
+   color: white;
+   font-weight: bold;
+   text-align: center;
+   
+}
+
+.boxfive{
+   border: 2px solid black;
+   background-image: url("http://astronomy.com/~/media/B05AE2C632A74E3A992C1EE9BF4C05D3.jpg");
+   background-size: cover;
+   color: white;
+   font-weight: bold;
+   text-align: center;
+
+}
+
+.boxsix{
+   border: 2px solid black;
+   background-image: url("http://astronomy.com/~/media/B05AE2C632A74E3A992C1EE9BF4C05D3.jpg");
+   color: white;
+   font-weight: bold;
+   text-align: center;
+
+}
+
+.boxseven{
+   border: 2px solid black;
+   background-image: url("http://astronomy.com/~/media/B05AE2C632A74E3A992C1EE9BF4C05D3.jpg");
+   color: white;
+   font-weight: bold;
+   text-align: center;
+   
+}
+
+.boxeight{
+   border: 2px solid black;
+   background-image: url("http://astronomy.com/~/media/B05AE2C632A74E3A992C1EE9BF4C05D3.jpg");
+   color: white;
+   font-weight: bold;
+   text-align: center;
+   
+}
+
+
+/** Footer box **/
+
+.footerbox{
+   display: grid;
+   flex-direction: row;
+   flex-wrap: wrap;
+   text-align: center;
+   margin: auto;
+   margin-top: 5px;
+   width: 80%;
+   border: 2px solid black;
+   justify-content: center;
+   background-image:url("https://images.unsplash.com/photo-1596998628927-4a8199d0d11b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGluayUyMHNreSUyMGF0JTIwbmlnaHR8ZW58MHx8MHx8&w=1000&q=80");
+   background-size: cover;
+   color: white;
+}
+
+.fb1{
+   border: 2px solid black;
+
+}
+
+.fb2{
+   border: 2px solid black;
+
+}
+
+.fb3{
+   border: 2px solid black;
+
+}
+
+.fb4{
+   border: 2px solid black;
+
+}
+
+.fb5{
+   font-size: 40px;
+   margin: auto;
+}
+
+.fa-house{
+   text-decoration: none;
+   color: black;
+
+}

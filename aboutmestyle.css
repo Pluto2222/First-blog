@@ -1,0 +1,167 @@
+body{
+   margin: 0;
+  /** background:rgb(247,225,255); **/
+   background-image: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX16715211.jpg");
+   height: 100%;
+   width: 100%;
+   font-family: 'Space Mono', monospace;
+}
+
+.header{
+   margin: auto;
+   text-align: center;
+   font-weight: bold;
+   font-size: 25px;
+   width: 400px;
+   color: white;
+}
+
+/** Grid **/
+
+.aboutme-grid{
+   justify-items: center;
+   align-items: center;
+   box-sizing: border-box;
+   height: 400px;
+   width: 90%;
+   margin: 40px;
+   display: grid;
+   grid-gap: 10px;
+   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+
+/** Large screens **/
+
+@media screen 
+  and (min-width: 560px) 
+  and (max-width: 1600px)
+    {
+    .aboutme-grid{
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 2fr 2fr;
+      grip-gap: 15px;
+    }
+}
+
+/** Image **/
+
+.about-left{
+  border: 2px solid black; 
+  border-radius: 20px;
+  background-image: url("https://s3.amazonaws.com/msoe/files/callouts/wide_sml_computer-science-landing-page.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 96%;
+  height: 550px;
+  margin: 15px;
+  
+}
+
+ul{
+   list-style: none;
+
+
+}
+
+/** Sidebar box **/
+
+
+.iconbox{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   text-align: center;
+   margin: auto;
+   margin-top: 5px;
+   width: 80%;
+   border: 2px solid black;
+   border-radius: 20px;
+   justify-content: center;
+      
+ }  
+
+.fa-facebook{
+   text-decoration: none;
+   color: black;
+   font-size: 50px;
+   margin-bottom: 10px;
+   border: 2px solid black;
+   border-radius: 5px;
+   background-color: white;
+   width: 400px;
+   
+}
+
+.fa-linkedin{
+   text-decoration: none;
+   color: black;
+   font-size: 50px;
+   margin-bottom: 10px;
+   border: 2px solid black;
+   border-radius: 5px;
+   background-color: white;
+   width: 400px;
+   
+}
+
+.fa-twitter{
+   text-decoration: none;
+   color: black;
+   font-size: 50px;
+   margin-bottom: 10px;
+   border: 2px solid black;
+   border-radius: 5px;
+   background-color: white;
+   width: 400px;
+   
+}
+ 
+ .fa-instagram{
+   text-decoration: none;
+   color: black;
+   font-size: 50px;
+   margin-bottom: 10px;
+   border: 2px solid black;
+   border-radius: 5px;
+   background-color: white;
+   width: 400px; 
+ 
+}
+
+.fa-house{
+   text-decoration: none;
+   color: white;
+   font-size: 50px;
+   margin-bottom: 10px;
+   border: 2px solid black;
+   border-radius: 5px;
+   background-color: black;
+   width: 400px;
+  
+}
+
+/** Main **/
+
+.about-right{
+   border: 2px solid black;
+   border-radius: 20px;
+   width: 400px;
+   text-align: center;
+   background-color: white;
+}
+
+/** Footer **/
+
+.about-para{
+   border: 2px solid black;
+   border-radius: 20px;
+   width: 100%;
+   text-align: center;
+   background-color: white;
+}
+   
+    
+
+   
+  
