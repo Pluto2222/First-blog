@@ -1,4 +1,4 @@
-body{
+.body2{
    background-color: rgba(255,192,203,0.3);
    height: 100%;
    width: 100%;
@@ -9,10 +9,10 @@ body{
 
 /** Header **/
 
-.header{
+.header2{
    text-align: center;
    margin: auto;
-   margin-bottom: 5px;
+   margin-bottom: 10px;
    width: 80%;
    border: 2px solid black;
    justify-content: center;
@@ -21,10 +21,11 @@ body{
    color: white;
 }
 
+
 /** grid container **/
 
 
-.mainbox{
+.mainbox2{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   grid-gap: 20px;
@@ -40,17 +41,40 @@ body{
 /** Large screens **/
 
 @media screen 
-  and (min-width: 1015px) 
-  and (max-width: 1600px)
+  and (min-width: 645px) 
+  and (max-width: 1115px)
     {
-    .mainbox{
+    .mainbox2{
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 2fr 2fr;
+      grid-template-rows: auto;
       grip-gap: 15px;
     }
 }
 
+/** Small screen **/
 
+@media screen 
+  and (min-width: 100px) 
+  and (max-width: 319px)
+    {
+    .mainbox2{
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grip-gap: 5px;
+      background-image: unset;
+      border: unset;  
+    }
+    .header2{
+      margin-left: auto;
+      margin-right: auto;
+      background-color: unset;
+      text-align: center;
+    }
+    
+}
+
+
+/** Grid content **/
 
 .boxone{
    border: 2px solid black;
@@ -131,7 +155,7 @@ body{
 /** Footer box **/
 
 .footerbox{
-   display: grid;
+   display: flex;
    flex-direction: row;
    flex-wrap: wrap;
    text-align: center;
@@ -167,11 +191,16 @@ body{
 
 .fb5{
    font-size: 40px;
-   margin: auto;
+   margin-left: 50%;
+   margin-right: 50%;
+   text-align: center;
+   
+   
+   
 }
 
 .fa-house{
    text-decoration: none;
    color: black;
-
+   
 }
