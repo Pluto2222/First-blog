@@ -1,5 +1,5 @@
 
-body{
+.body{
    background-color: grey;
    height: 100%;
    width: 100%;
@@ -8,32 +8,212 @@ body{
    
 }
 
+
+
+/** Nav menu **/
+
+.navmenu{
+   border: 2px solid black;
+   border-radius: 10px;
+   background-color: black;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 30px 10%;
+   font-size: 25px;
+   font-weight: bold;
+   width: auto;
+   margin: 5px;
+   
+}
+
+.fa-user-astronaut:hover{
+   color: #0088a9;
+
+}
+
+.fa-user-astronaut{
+   font-size: 40px;
+   color: white;
+   transition: all 0.3 ease 0s;
+   
+}
+
+.navlist li{
+   display: inline-block;
+   margin: 5px;
+
+}
+   
+
+.navlist li a{
+   transition: all 0.3 ease 0s;
+   color: white;
+   text-decoration: none;
+}
+
+.navlist li a:hover{
+   color: #0088a9;
+}
+
+button{
+  padding: 9px 25px;
+  background-color:  rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3 ease 0s;
+}
+
+button:hover {
+  background-color:  rgba(0, 136, 169, 0.8);
+
+}
+
+@media screen 
+  and (min-width: 0px) 
+  and (max-width: 350px)
+    {
+      .navmenu{
+        background-color: unset;
+        border: unset;
+        display: flex;
+        flex-wrap: wrap
+      }
+}   
+      
+
+/** Author section **/
+
+#author{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-items: center;
+   border: 2px solid black;
+   border-radius: 10px;
+   width: 80%;
+   height: 40%;
+   color: white;
+   background-color: black;
+   margin: 0 auto;
+ }
+
+.bio{
+   text-align: center;
+   font-weight: bold;
+   
+}
+
+.anon{
+   height: 200px;
+   width: 200px;
+   border: 2px solid black;
+   border-radius: 20px;
+   transition: all .2s ease-in-out; 
+}
+
+.anon:hover{
+   transform: scale(1.1);
+   border: 1px solid white;
+   box-shadow: 1px 1px;
+}
+
+ 
+ /** Auther social **/
+ 
+.nav2{
+   border: 2px solid white;
+   border-radius: 10px;
+   background-color: black;
+   display: flex;
+   flex-wrap: wrap;
+   justify-items: center;
+   align-items: center;
+   font-size: 25px;
+   font-weight: bold;
+   width: 100px;
+   margin: 10px;
+  
+}
+
+.navlist2 li{
+   display: inline-block;
+  
+}
+   
+
+.navlist2 li a{
+   transition: all 0.3 ease 0s;
+   color: white;
+   
+}
+
+.navlist2 li a:hover{
+   color: #0088a9;
+}
+
+
+.fa-facebook-square{
+   color: white;
+   font-size: 40px;
+   text-decoration: none;
+  
+   
+}
+
+.fa-twitter-square{
+   color: white;
+   font-size: 40px;
+   text-decoration: none;
+   
+}
+
+
+.fa-instagram-square{
+   color: white;
+   font-size: 40px;
+   text-decoration: none;
+   
+}
+
+
+
 /** grid container **/
 
 .blogbox{
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-   grid-gap: 15px;
+   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+   grid-template-rows: fit-content(100%)
+   grid-gap: 5px;
+   justify-content: center;
    width: 100%;
-   height: 800px;
+   height: 100%;
+   margin: 0 auto;
 }
 
-/** Large screens **/
+
+
+/** small screens **/
 
 @media screen 
-  and (min-width: 1015px) 
-  and (max-width: 1600px)
+  and (min-width: 100px) 
+  and (max-width: 600px)
     {
     .blogbox{
-      grid-template-columns: 1fr 1fr;
+      display: grid;
+      grid-template-rows: repeat(auto-fit, minmax(auto, 1fr));
+      width: auto;
+      
     }
+    
 }
 
 
 
-/** Header **/
+/** Content **/
 
-#header{
+#content{
    border: 1px solid black;
    border-radius: 10px;
    padding: 5px;
@@ -87,12 +267,9 @@ ul{
 }
 
 
-
-
-/** sidebar article icon **/
+/** sidebar article icon **
 
 .fa-newspaper{
-	width: 50p;
 	height: 50px;
 	font-size: 50px;
 	margin-bottom: 10px;
@@ -147,11 +324,10 @@ ul{
 
 }
 
-/** Sidbar image icon **/
+/** Sidbar image icon **
 
 
 .fa-images{
-   width: 50p;
 	height: 50px;
 	font-size: 50px;
 	margin-top: 10px;
@@ -192,7 +368,7 @@ ul{
 }
 
 .fa-images:hover{
-  transform: translateY(-6px);
+      transform: translateY(-6px);
 		animation-name: hover;
 		animation-duration: 1.5s;
 		animation-delay: $defaultDuration;
@@ -200,23 +376,22 @@ ul{
 		animation-iteration-count: infinite;
 		animation-direction: alternate;
       -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
-    -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+     -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
 
 }
 
-/** Sidebar about me icon **/
+/** Sidebar about me icon **
 
 .fa-address-card{
-   width: 50p;
-	height: 50px;
-	font-size: 50px;
-	margin-top: 15px;
-   border: 2px solid black;
-   border-radius: 10px;
-   background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__480.jpg");
-   text-decoration: none;
-   color: black;
+   	height: 50px;
+   	font-size: 50px;
+   	margin-top: 15px;
+      border: 2px solid black;
+      border-radius: 10px;
+      background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__480.jpg");
+      text-decoration: none;
+      color: black;
 }
 
 @keyframes hover {
@@ -248,16 +423,16 @@ ul{
 }
 
 .fa-address-card:hover{
-  transform: translateY(-6px);
-		animation-name: hover;
-		animation-duration: 1.5s;
-		animation-delay: $defaultDuration;
-		animation-timing-function: linear;
-		animation-iteration-count: infinite;
-		animation-direction: alternate;
+     transform: translateY(-6px);
+   	animation-name: hover;
+    	animation-duration: 1.5s;
+    	animation-delay: $defaultDuration;
+    	animation-timing-function: linear;
+    	animation-iteration-count: infinite;
+    	animation-direction: alternate;
       -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
-    -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+      -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+       box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
 
 }
 
@@ -346,63 +521,233 @@ ul{
 
 }
 
-
-/** Nav section **/
-
-.nav{
-   text-align: center;
-   margin: 50% 10% 50% 0;
-   
-}
-
+/** Social footer **/
 
 .fa-facebook{
-   text-decoration: none;
-   color: black;
-   font-size: 50px;
-   margin-bottom: 10px;
+	height: 50px;
+	font-size: 50px;
+	margin-bottom: 10px;
    border: 2px solid black;
-   border-radius: 5px;
+   border-radius: 10px;
    background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__480.jpg");
+   transition: transform .7s ease-in-out;
+   text-decoration: none;
+   color:black;
 }
+
+@keyframes hover {
+	50% {
+		transform: translateY(-3px);
+	}
+
+	100% {
+		transform: translateY(-6px);
+	}
+}
+
+@keyframes hover-shadow {
+	0% {
+		transform: translateY(6px);
+		opacity: .4;
+	}
+
+	50% {
+		transform: translateY(3px);
+		opacity: 1;
+	}
+
+
+	100% {
+		transform: translateY(6px);
+		opacity: .4;
+	}
+}
+
+.fa-facebook:hover{
+      transform: translateY(-6px);
+		animation-name: hover;
+		animation-duration: 1.5s;
+		animation-delay: $defaultDuration;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+      -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+     -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+      
+}
+
 
 .fa-twitter{
-   text-decoration: none;
-   color: black;
-   font-size: 50px;
-   margin-bottom: 10px;
-   margin-top: 10px;
+   height: 50px;
+	font-size: 50px;
+	margin-bottom: 10px;
    border: 2px solid black;
-   border-radius: 5px;
+   border-radius: 10px;
    background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__480.jpg");
+   transition: transform .7s ease-in-out;
+   text-decoration: none;
+   color:black;
 }
+
+@keyframes hover {
+	50% {
+		transform: translateY(-3px);
+	}
+
+	100% {
+		transform: translateY(-6px);
+	}
+}
+
+@keyframes hover-shadow {
+	0% {
+		transform: translateY(6px);
+		opacity: .4;
+	}
+
+	50% {
+		transform: translateY(3px);
+		opacity: 1;
+	}
+
+
+	100% {
+		transform: translateY(6px);
+		opacity: .4;
+	}
+}
+
+.fa-twitter:hover{
+      transform: translateY(-6px);
+		animation-name: hover;
+		animation-duration: 1.5s;
+		animation-delay: $defaultDuration;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+      -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+     -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+      
+}
+
 
 .fa-linkedin{
-   text-decoration: none;
-   color: black;
-   font-size: 50px;
-   margin-bottom: 10px;
-   margin-top: 10px
+  height: 50px;
+	font-size: 50px;
+	margin-bottom: 10px;
    border: 2px solid black;
-   border-radius: 5px;
+   border-radius: 10px;
    background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__480.jpg");
+   transition: transform .7s ease-in-out;
+   text-decoration: none;
+   color:black;
 }
+
+@keyframes hover {
+	50% {
+		transform: translateY(-3px);
+	}
+
+	100% {
+		transform: translateY(-6px);
+	}
+}
+
+@keyframes hover-shadow {
+	0% {
+		transform: translateY(6px);
+		opacity: .4;
+	}
+
+	50% {
+		transform: translateY(3px);
+		opacity: 1;
+	}
+
+
+	100% {
+		transform: translateY(6px);
+		opacity: .4;
+	}
+}
+
+.fa-linkedin:hover{
+      transform: translateY(-6px);
+		animation-name: hover;
+		animation-duration: 1.5s;
+		animation-delay: $defaultDuration;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+      -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+     -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+      
+} 
+
+
 
 .fa-instagram{
-   text-decoration: none;
-   color: black;
-   font-size: 50px;
-   margin-top: 10px;
+   height: 50px;
+	font-size: 50px;
+	margin-bottom: 10px;
    border: 2px solid black;
-   border-radius: 5px;
+   border-radius: 10px;
    background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__480.jpg");
+   transition: transform .7s ease-in-out;
+   text-decoration: none;
+   color:black;
+}
+
+@keyframes hover {
+	50% {
+		transform: translateY(-3px);
+	}
+
+	100% {
+		transform: translateY(-6px);
+	}
+}
+
+@keyframes hover-shadow {
+	0% {
+		transform: translateY(6px);
+		opacity: .4;
+	}
+
+	50% {
+		transform: translateY(3px);
+		opacity: 1;
+	}
+
+
+	100% {
+		transform: translateY(6px);
+		opacity: .4;
+	}
+}
+
+.fa-instagram:hover{
+      transform: translateY(-6px);
+		animation-name: hover;
+		animation-duration: 1.5s;
+		animation-delay: $defaultDuration;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+      -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+     -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+      
 }
 
 
-/** Footer section **/
+/** Bottom section **/
 
-#footer{
-    border: 1px solid black;
+#endcontent{
+   border: 1px solid black;
    border-radius: 10px;
    padding: 5px;
    margin: 5px; 
@@ -410,7 +755,7 @@ ul{
 
 }
 
-.footerbox:hover{
+.endcontent2:hover{
    color: white;
 	opacity: 0.9;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -421,7 +766,7 @@ ul{
 
 } 
 
-.footerbox{
+.endcontent2{
    border: 1px solid black;
    border-radius: 60px;
    box-shadow: 0px 0px 1px 1px; 
@@ -431,7 +776,7 @@ ul{
 
 }
 
-.footerimg{
+.endcontentimg{
    background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__480.jpg");
    background-size: contain;
    background-repeat: no repeat;
@@ -444,4 +789,31 @@ ul{
 a{
    color: black;
    
+}
+
+/** Footer layout **/
+
+.nav{
+   border: 2px solid black;
+   border-radius: 10px;
+   background-color: black;
+   display: flex;
+   font-size: 25px;
+   font-weight: bold;
+   width: 100%;
+   height: auto;
+   margin-top: 5px;
+   justify-items: center;
+   
+}
+
+.footerlist{
+   display: inline-block;
+   margin: 0 auto;
+   text-align: center;
+}
+
+li{
+   display: inline-block;
+
 }
