@@ -1,4 +1,4 @@
-body{
+.body3{
    margin: 0;
   /** background:rgb(247,225,255); **/
    background-image: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX16715211.jpg");
@@ -7,7 +7,7 @@ body{
    font-family: 'Space Mono', monospace;
 }
 
-.header{
+.header3{
    margin: auto;
    text-align: center;
    font-weight: bold;
@@ -16,32 +16,35 @@ body{
    color: white;
 }
 
-/** Grid **/
+/** container **/
 
-.aboutme-grid{
+.aboutme-container{
    justify-items: center;
    align-items: center;
    box-sizing: border-box;
-   height: 400px;
+   height: auto;
    width: 90%;
-   margin: 40px;
+   margin: 0 auto;
    display: grid;
-   grid-gap: 10px;
-   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+   
+   
 }
 
 
-/** Large screens **/
+/** small screens **/
 
 @media screen 
-  and (min-width: 560px) 
-  and (max-width: 1600px)
+  and (min-width: 100px) 
+  and (max-width: 600px)
     {
     .aboutme-grid{
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 2fr 2fr;
-      grip-gap: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      
     }
+    
 }
 
 /** Image **/
@@ -49,12 +52,12 @@ body{
 .about-left{
   border: 2px solid black; 
   border-radius: 20px;
-  background-image: url("https://s3.amazonaws.com/msoe/files/callouts/wide_sml_computer-science-landing-page.jpg");
+  background-image: url("https://images.jpost.com/image/upload/f_auto,fl_lossy/t_JM_ArticleMainImageFaceDetect/390855");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 96%;
+  width: 100%;
   height: 550px;
-  margin: 15px;
+  margin: 0 auto;
   
 }
 
@@ -81,53 +84,32 @@ ul{
       
  }  
 
-.fa-facebook{
+/** Socials **/
+
+.fa-facebook-square{
+   color: white;
+   font-size: 40px;
    text-decoration: none;
-   color: black;
-   font-size: 50px;
-   margin-bottom: 10px;
-   border: 2px solid black;
-   border-radius: 5px;
-   background-color: white;
-   width: 400px;
+  
    
 }
 
-.fa-linkedin{
+.fa-twitter-square{
+   color: white;
+   font-size: 40px;
    text-decoration: none;
-   color: black;
-   font-size: 50px;
-   margin-bottom: 10px;
-   border: 2px solid black;
-   border-radius: 5px;
-   background-color: white;
-   width: 400px;
    
 }
 
-.fa-twitter{
+
+.fa-instagram-square{
+   color: white;
+   font-size: 40px;
    text-decoration: none;
-   color: black;
-   font-size: 50px;
-   margin-bottom: 10px;
-   border: 2px solid black;
-   border-radius: 5px;
-   background-color: white;
-   width: 400px;
    
 }
- 
- .fa-instagram{
-   text-decoration: none;
-   color: black;
-   font-size: 50px;
-   margin-bottom: 10px;
-   border: 2px solid black;
-   border-radius: 5px;
-   background-color: white;
-   width: 400px; 
- 
-}
+
+
 
 .fa-house{
    text-decoration: none;
